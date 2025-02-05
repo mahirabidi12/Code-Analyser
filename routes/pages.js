@@ -9,7 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 router.use(express.static(path.join(__dirname , "../public")));
 
-router.get("/home" , (req,res)=>{
+router.get("/" , (req,res)=>{
     res.sendFile(path.join(__dirname , "../public/home.html"));
 })
 
