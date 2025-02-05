@@ -18,7 +18,7 @@ router.get("/gemini" , (req,res)=>{
 })
 
 router.get("/groq" , (req,res)=>{
-    res.sendFile(path.join(__dirname , "../public/groq.html"));
+    res.sendFile(path.join(__dirname , "../public/Groq.html"));
 })
 
 
