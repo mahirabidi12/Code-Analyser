@@ -23,6 +23,7 @@ app.post("/getGeminiData" ,async (req,res) => {
 })
 
 
+
 app.post("/getGroqData" ,async (req,res) => {
     const prompt = req.body.prompt;
     const data = await GetGroqData(prompt);

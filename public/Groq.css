@@ -1,12 +1,8 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Orbitron:wght@400;500&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: linear-gradient(45deg, #1e1e1e, #2a2a2a, #121212);
     background-size: 300% 300%;
     animation: gradientAnimation 5s ease infinite;
@@ -19,13 +15,13 @@ body {
     text-align: center;
     padding: 2rem;
     margin: 0;
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-y: auto;
 }
 
 .container {
     max-width: 1200px;
     width: 100%;
-    overflow-y: auto; /* Allow scrolling inside */
+    overflow-y: auto;
     padding: 20px;
     text-align: left;
     margin-top: 2rem;
@@ -40,18 +36,17 @@ h1 {
     z-index: 1;
 }
 
-/* Input Box Adjustment */
 input {
     font-size: 1.5rem;
     padding: 20px;
     width: 80%;
-    min-height: 120px; /* Add height for multiline data */
+    min-height: 120px;
     margin-bottom: 2rem;
     border: 2px solid #333;
     border-radius: 10px;
     background-color: #222;
     color: #fff;
-    resize: vertical;  /* Allow vertical resize */
+    resize: vertical;
     transition: transform 0.3s ease, background-color 0.3s ease;
     animation: fadeIn 1.5s ease-out;
 }
@@ -61,7 +56,6 @@ input:focus {
     border-color: #555;
 }
 
-/* Button and Content Alignment */
 button {
     background-color: #333;
     color: #fff;
@@ -93,12 +87,10 @@ canvas {
     animation: fadeIn 1.5s ease-out;
 }
 
-/* Prevent the input and button from disappearing */
 input, button {
     transition: none;
 }
 
-/* Background Animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -111,7 +103,6 @@ input, button {
     }
 }
 
-/* Fade-in Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;

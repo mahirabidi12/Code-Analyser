@@ -1,12 +1,8 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Orbitron:wght@400;500&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background: linear-gradient(45deg, #1e1e1e, #2a2a2a, #121212);
     background-size: 300% 300%;
     animation: gradientAnimation 5s ease infinite;
@@ -29,7 +25,6 @@ h1 {
     animation: fadeIn 1s ease-out;
 }
 
-/* Horizontal Button Layout */
 button {
     background-color: #333;
     color: #fff;
@@ -48,13 +43,11 @@ button:hover {
     background-color: #444;
 }
 
-/* Arrange buttons horizontally with a gap */
 #clickedGemini, #clickedGroqAi {
     display: inline-block;
     animation: buttonSlideIn 1s ease-out;
 }
 
-/* Background Animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -67,7 +60,6 @@ button:hover {
     }
 }
 
-/* Fade-in Animation for Elements */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -79,7 +71,6 @@ button:hover {
     }
 }
 
-/* Button Slide-in Animation */
 @keyframes buttonSlideIn {
     from {
         opacity: 0;
