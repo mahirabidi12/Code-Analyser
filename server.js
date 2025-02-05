@@ -1,7 +1,7 @@
 import express from 'express'
 import pagesRoutes from './routes/pages.js'
 import bodyParser from 'body-parser';
-import {GetGeminiData} from './api.js'
+import {GetGeminiData, GetGroqData} from './api.js'
 import dotenv from 'dotenv'
 
 dotenv.config();
@@ -20,4 +20,11 @@ app.post("/getGeminiData" ,async (req,res) => {
     const prompt = req.body.prompt;
     const data = await GetGeminiData(prompt);
     res.send(data);
+})
+
+
+app.post("/getGroqData" ,async (req,res) => {
+    const prompt = req.body.prompt;
+    const data = await GetGroqData(prompt);
+    res.json(data);
 })
