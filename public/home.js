@@ -7,5 +7,5 @@ clickedGemini.addEventListener("click" , (event)=>{
 })
 
 clickedOpenAi.addEventListener("click" , (event)=>{
-    window.location.href = "/openAi"
+    window.location.href = "/groq"
 })

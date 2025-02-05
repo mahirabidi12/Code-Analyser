@@ -17,8 +17,8 @@ router.get("/gemini" , (req,res)=>{
     res.sendFile(path.join(__dirname , "../public/gemini.html"));
 })
 
-router.get("/openAi" , (req,res)=>{
-    res.sendFile(path.join(__dirname , "../public/openAi.html"));
+router.get("/groq" , (req,res)=>{
+    res.sendFile(path.join(__dirname , "../public/groq.html"));
 })
 
 
