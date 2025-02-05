@@ -55,7 +55,7 @@ function displayGraphData(data){
         data: {
             labels: ['readibility', 'efficiency', 'precision', 'documentation', 'optimisation', 'quality'],
             datasets: [{
-                label: 'Sample Data',
+                label: 'Gemini Data',
                 data: [data.readibility,data.efficiency,data.precision,data.documentation,data.optimisation,data.quality], // Data values
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
