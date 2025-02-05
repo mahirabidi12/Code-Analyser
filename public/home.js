@@ -1,11 +1,11 @@
 const clickedGemini = document.getElementById("clickedGemini");
-const clickedOpenAi = document.getElementById("clickedOpenAi");
+const clickedGroqAi = document.getElementById("clickedGroqAi");
 
 
 clickedGemini.addEventListener("click" , (event)=>{
     window.location.href = "/gemini"
 })
 
-clickedOpenAi.addEventListener("click" , (event)=>{
+clickedGroqAi.addEventListener("click" , (event)=>{
     window.location.href = "/groq"
 })
