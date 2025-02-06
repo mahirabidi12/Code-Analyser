@@ -28,7 +28,8 @@ submit.addEventListener("click" , (event) =>{
       "Good": (string),
       "Bad": (string)
     }
-    Here is the code: ${writing.value} , don't say anything else , just give the specified data , don't even add a letter more
+    Here is the code: ${writing.value}, Remember , just send be data in the specified format , don't add a single line or word anywhere.
+    Don't even say here is the feedback .
     `;
 
     fetch("/getGroqData" , {
